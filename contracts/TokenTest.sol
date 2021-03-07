@@ -5,7 +5,7 @@ contract TokenTest {
     string public name = "TokenTest";
     string public symbol = "TKT";
     string public standard = "TokenTest v1.0";
-    uint8 public decimals = 8;
+    //uint8 public decimals = 8;
     uint256 public totalSupply;
 
     event Transfer(

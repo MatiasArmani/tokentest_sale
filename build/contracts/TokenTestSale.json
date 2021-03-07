@@ -1,0 +1,223 @@
+{
+  "contractName": "TokenTestSale",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/Usuario/Descargas/tokentest/contracts/TokenTestSale.sol\":\"TokenTestSale\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Usuario/Descargas/tokentest/contracts/TokenTestSale.sol\":{\"keccak256\":\"0x5bce1b9d159adc1c36c40eb68d1f420ff129c12646e769b299404356645d3f2e\",\"urls\":[\"bzz-raw://4ec77ffcbd63c015886e65a355a4a5dfba7a62f62670712da5a9eb1ac40fe265\",\"dweb:/ipfs/QmetMjgWf2jNS9xhyj6FGzyHJTRKbbypa7EHesxDhdmk8o\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a72315820bd5efbac54168edf3cefae19130120295ace15ee09b38a5ee3f9367b9776e37664736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a72315820bd5efbac54168edf3cefae19130120295ace15ee09b38a5ee3f9367b9776e37664736f6c63430005100032",
+  "sourceMap": "78:73:0:-;;;108:40;8:9:-1;5:2;;;30:1;27;20:12;5:2;108:40:0;78:73;;;;;;",
+  "deployedSourceMap": "78:73:0:-;;;;;",
+  "source": "// SPDX-License-Identifier: MatiasArmani\r\npragma solidity >=0.4.22 <0.9.0;\r\n\r\ncontract TokenTestSale {\r\n    constructor () public {\r\n        \r\n    }\r\n}",
+  "sourcePath": "D:/Usuario/Descargas/tokentest/contracts/TokenTestSale.sol",
+  "ast": {
+    "absolutePath": "/D/Usuario/Descargas/tokentest/contracts/TokenTestSale.sol",
+    "exportedSymbols": {
+      "TokenTestSale": [
+        6
+      ]
+    },
+    "id": 7,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "42:32:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 6,
+        "linearizedBaseContracts": [
+          6
+        ],
+        "name": "TokenTestSale",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 4,
+              "nodeType": "Block",
+              "src": "130:18:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 5,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "120:2:0"
+            },
+            "returnParameters": {
+              "id": 3,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "130:0:0"
+            },
+            "scope": 6,
+            "src": "108:40:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 7,
+        "src": "78:73:0"
+      }
+    ],
+    "src": "42:109:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/D/Usuario/Descargas/tokentest/contracts/TokenTestSale.sol",
+      "exportedSymbols": {
+        "TokenTestSale": [
+          6
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "42:32:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            6
+          ],
+          "name": "TokenTestSale",
+          "scope": 7
+        },
+        "children": [
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 6,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2,
+                "name": "ParameterList",
+                "src": "120:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 3,
+                "name": "ParameterList",
+                "src": "130:0:0"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4,
+                "name": "Block",
+                "src": "130:18:0"
+              }
+            ],
+            "id": 5,
+            "name": "FunctionDefinition",
+            "src": "108:40:0"
+          }
+        ],
+        "id": 6,
+        "name": "ContractDefinition",
+        "src": "78:73:0"
+      }
+    ],
+    "id": 7,
+    "name": "SourceUnit",
+    "src": "42:109:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x59C59E28EB2B4D443aD7fb02AD4A41F584D7b4A6",
+      "transactionHash": "0x2a56824744f439f6d8847f0137047fb116c5649d3c5053c3cb9190ff75e2e2d8"
+    }
+  },
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-03-04T22:14:54.148Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
