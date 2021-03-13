@@ -6,6 +6,9 @@
     "directories": {
         "test": "test"
     },
+    "scripts": {
+        "dev": "lite-server"
+    },
     "author": "Matias",
     "license": "ISC",
     "devDependencies": {
