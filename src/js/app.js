@@ -12,7 +12,7 @@ App = {
     tokensAvailable: 750000,
 
     init: function(){
-        console.log("App initialized...");
+        //console.log("App initialized...");
         return App.initWeb3();
     },
 
@@ -40,16 +40,16 @@ App = {
             App.contracts.TokenTestSale = TruffleContract(tokenTestSale);
             App.contracts.TokenTestSale.setProvider(App.web3Provider);
             App.contracts.TokenTestSale.deployed().then(function(tokenTestSale){
-                console.log("TokenTest Sale Address:", tokenTestSale.address);
+            //console.log("TokenTest Sale Address:", tokenTestSale.address);
             });
         }).done(function(){
             $.getJSON("TokenTest.json", function(tokenTest){
                 App.contracts.TokenTest = TruffleContract(tokenTest);
                 App.contracts.TokenTest.setProvider(App.web3Provider);
                 App.contracts.TokenTest.deployed().then(function(tokenTest){
-                console.log("TokenTest Address:", tokenTest.address);
+                //console.log("TokenTest Address:", tokenTest.address);
                 });
-                
+
                 App.listenForEvents();
                 return App.render();
             });
@@ -115,10 +115,10 @@ App = {
                 value: numberOfTokens * App.tokenPrice,
                 gas: 500000 //Gas limit
             });
-        }).then(function(result){
-            $('form').trigger('reset');
-            //Wait for Sell event
         });
+        App.loading = false;
+        loader.hide();
+        content.show();
     },
 
     listenForEvents: function(){
@@ -127,7 +127,6 @@ App = {
                 fromBlock: 0,
                 toBlock: 'latest'
             }).watch(function(error, event){
-                console.log("event triggered", event);
                 App.render();
             });
         });
